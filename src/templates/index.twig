@@ -1,0 +1,23 @@
+{% extends "_layouts/_generic_page_layout.twig" %}
+
+{% block headLinks %}
+	{{ parent() }}
+	<link rel="amphtml" href="/amp">
+{% endblock headLinks %}
+
+{% block content %}
+	<section class="p-5">
+		<h1>content<br> Lorem ipsum sem lectus felis convallis mauris pretium, vel duis erat vulputate pulvinar curabitur, metus porta lectus hac sed eros. leo tincidunt aliquet sagittis eget faucibus quis fames, libero diam hendrerit varius quisque condimentum est, dui mollis bibendum ultrices felis senectus. tortor vivamus quisque scelerisque iaculis rutrum aenean mauris purus nec tellus, turpis vestibulum elementum vestibulum etiam dictum odio curae posuere, conubia feugiat per nec phasellus quam orci hac neque.</h1>
+	</section>
+{% endblock %}
+
+{% block subcontent %}
+	<section class="bg-purple-500 p-5">
+		<h2>subcontent</h2>
+	</section>
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+	{{ parent() }}
+{% endblock bodyJs %}
